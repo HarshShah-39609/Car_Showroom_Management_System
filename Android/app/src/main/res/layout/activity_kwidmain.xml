@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kwidmain">
+
+    <TextView
+        android:id="@+id/textViewcreta"
+        android:layout_width="114dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="30dp"
+        android:text="Kwid"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="175dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewcreta"
+        app:srcCompat="@drawable/kwid_moonlightsilver" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="175dp"
+        android:layout_height="25dp"
+        android:paddingLeft="30dp"
+        android:text="TyphoonSiver"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="175dp"
+        android:layout_height="25dp"
+        android:paddingLeft="30dp"
+        android:text="Galaxy Blue"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="175dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewcreta"
+        app:srcCompat="@drawable/kwid_electricblue" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="175dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:srcCompat="@drawable/kwid_fieryred" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="175dp"
+        android:layout_height="25dp"
+        android:paddingLeft="30dp"
+        android:text="Red MulBerry"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton5"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/imageButton5"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="233dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="5dp"
+        android:text="Prize : 3.12 Lakhs"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="362dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="28dp"
+        android:paddingTop="5dp"
+        android:text="EXTERIOR"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="362dp"
+        android:layout_height="35dp"
+        android:paddingTop="5dp"
+        android:text="INTERIOR"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

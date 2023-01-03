@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cardetails2">
+
+    <TextView
+        android:id="@+id/txtcardetails"
+        android:layout_width="137dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="10dp"
+        android:text="Car Details"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="122dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="24dp"
+        android:text="TATA"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtcardetails"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/txtcardetails"
+        app:layout_constraintTop_toBottomOf="@+id/txtcardetails" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="168dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textView22"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:srcCompat="@drawable/tiago" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="166dp"
+        android:layout_height="34dp"
+        android:text="Tiago"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageButton9"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton9" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="191dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toEndOf="@+id/imageButton9"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:srcCompat="@drawable/harrier" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="188dp"
+        android:layout_height="25dp"
+        android:text="Harrier"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton10"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="@+id/imageButton10"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton10" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="125dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Mahindra"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="210dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        app:srcCompat="@drawable/scorpio" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="210dp"
+        android:layout_height="28dp"
+        android:text="Scorpio"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton11"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="@+id/imageButton11"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton11" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView26"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:srcCompat="@drawable/xuv500" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="220dp"
+        android:layout_height="32dp"
+        android:text="XUV500"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageButton13"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

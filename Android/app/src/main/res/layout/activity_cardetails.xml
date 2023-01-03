@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Cardetails">
+
+    <TextView
+        android:id="@+id/txtcardetails"
+        android:layout_width="137dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="10dp"
+        android:text="Car Details"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/cretaimage"
+        android:layout_width="175dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtcardetails"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcardetails"
+        app:srcCompat="@drawable/creta" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="175dp"
+        android:layout_height="30dp"
+        android:text="Creta"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/cretaimage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/cretaimage"
+        app:layout_constraintTop_toBottomOf="@+id/cretaimage" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="137dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Hyndai"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtcardetails"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtcardetails"
+        app:layout_constraintTop_toBottomOf="@+id/txtcardetails" />
+
+    <ImageButton
+        android:id="@+id/i20image"
+        android:layout_width="142dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toEndOf="@+id/cretaimage"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/i20" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="142dp"
+        android:layout_height="28dp"
+        android:text="i20"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/i20image"
+        app:layout_constraintHorizontal_bias="0.635"
+        app:layout_constraintStart_toStartOf="@+id/i20image"
+        app:layout_constraintTop_toBottomOf="@+id/i20image" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="137dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Renualt"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="175dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/duster_slategrey" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="175dp"
+        android:layout_height="30dp"
+        android:text="Duster"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton7"
+        app:layout_constraintStart_toStartOf="@+id/imageButton7"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton7" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="150dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/kwid" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="150dp"
+        android:layout_height="28dp"
+        android:text="Kwid"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton8"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="@+id/imageButton8"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="137dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        android:text="Maruti Suzuki"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView18"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="175dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:srcCompat="@drawable/swift" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="175dp"
+        android:layout_height="25dp"
+        android:text="Swift"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton12"
+        app:layout_constraintStart_toStartOf="@+id/imageButton12"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton12" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="147dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textView18"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton12"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:srcCompat="@drawable/alto" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:text="Alto"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton14"
+        app:layout_constraintStart_toStartOf="@+id/imageButton14"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton14" />
+
+    <TextView
+        android:id="@+id/nextpage"
+        android:layout_width="275dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:paddingTop="5dp"
+        android:text="Next Page For More Cars"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView21"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

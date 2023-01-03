@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rolls"
+    tools:context=".BookACar">
+
+
+    <TextView
+        android:id="@+id/textViewbookcar"
+        android:layout_width="144dp"
+        android:layout_height="39dp"
+        android:paddingLeft="20dp"
+        android:text="Book A Car"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/servicetype"
+        android:layout_width="136dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/input_bg"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:text="Type Of Booking"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/booktype"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewbookcar" />
+
+    <RadioGroup
+        android:id="@+id/booktype"
+        android:layout_width="213dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="144dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="@+id/textViewbookcar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewbookcar">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="New Car"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="Test Drive"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/BookModel"
+        android:layout_width="135dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="184dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Car Model"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/servicetype"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/servicetype"
+        app:layout_constraintTop_toBottomOf="@+id/servicetype"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <Spinner
+        android:id="@+id/activity_bac_mdl1"
+        android:layout_width="161dp"
+        android:layout_height="56dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="@color/design_default_color_background"
+        android:entries="@array/CarModel"
+        android:foregroundTint="@color/lime"
+        android:spinnerStyle="@android:style/Widget.Spinner.DropDown"
+        app:layout_constraintBottom_toTopOf="@+id/Submitbook"
+        app:layout_constraintEnd_toEndOf="@+id/booktype"
+        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintStart_toEndOf="@+id/BookModel"
+        app:layout_constraintTop_toBottomOf="@+id/booktype"
+        app:layout_constraintVertical_bias="0.377" />
+
+    <Button
+        android:id="@+id/Submitbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:text="Submit"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/activity_bac_mdl1"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="@+id/BookModel"
+        app:layout_constraintTop_toBottomOf="@+id/BookModel"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:paddingTop="10dp"
+        android:text="Payment"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/BookModel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/BookModel"
+        app:layout_constraintTop_toBottomOf="@+id/BookModel" />
+
+    <RadioGroup
+        android:id="@+id/pay_type"
+        android:layout_width="196dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/activity_bac_mdl1">
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:text="EMI"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="89dp"
+            android:layout_height="52dp"
+            android:text="Cash"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

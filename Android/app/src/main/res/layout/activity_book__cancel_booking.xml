@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rolls"
+    tools:context=".Book_CancelBooking">
+
+    <TextView
+        android:id="@+id/cancelbookingtextview"
+        android:layout_width="173dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="32dp"
+        android:text="Cancel Booking"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cancelcarid"
+        android:layout_width="313dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/cancelbookingtextview"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="@+id/cancelbookingtextview"
+        app:layout_constraintTop_toBottomOf="@+id/cancelbookingtextview" />
+
+
+    <EditText
+        android:id="@+id/cancelcarmodel"
+        android:layout_width="168dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Booking Car Model"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/cancelcarid"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cancelcarid"
+        app:layout_constraintTop_toBottomOf="@+id/cancelcarid" />
+
+    <Spinner
+        android:id="@+id/activity_bac_mdl"
+        android:layout_width="138dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="@color/white"
+        android:entries="@array/CarModel"
+        android:foregroundTint="@color/white"
+        android:spinnerStyle="@android:style/Widget.Spinner.DropDown"
+        app:layout_constraintBottom_toTopOf="@+id/Submitbook"
+        app:layout_constraintEnd_toEndOf="@+id/cancelcarid"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toEndOf="@+id/cancelcarmodel"
+        app:layout_constraintTop_toBottomOf="@+id/cancelcarid"
+        app:layout_constraintVertical_bias="0.21"></Spinner>
+
+    <EditText
+        android:id="@+id/Caneclemail"
+        android:layout_width="313dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Booking Email"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/cancelcarmodel"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="@+id/cancelcarmodel"
+        app:layout_constraintTop_toBottomOf="@+id/cancelcarmodel" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="124dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="@+id/Caneclemail"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="@+id/cancelcarmodel"
+        app:layout_constraintTop_toBottomOf="@+id/Caneclemail">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:text="Test Drive"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:text="New Car"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:text="Service"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="44dp"
+        android:paddingLeft="10dp"
+        android:text="Booking Type"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_caneclbooking"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup3"
+        app:layout_constraintHorizontal_bias="0.572"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Caneclemail"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <Button
+        android:id="@+id/btn_caneclbooking"
+        android:layout_width="107dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="@color/white"
+        android:text="Submit"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup3"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

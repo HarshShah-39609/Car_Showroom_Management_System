@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".cretaview">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="399dp"
+        android:layout_margin="5dip"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/eliteprevious"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/previous" />
+
+        <ViewFlipper
+            android:id="@+id/elitei20_viewflipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/elitei20_front"
+                android:layout_width="311dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/i20_front" />
+
+            <ImageView
+                android:id="@+id/elitei20_left"
+                android:layout_width="300dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/i20_left" />
+
+            <ImageView
+                android:id="@+id/elitei20_back"
+                android:layout_width="300dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/i20_back" />
+
+            <ImageView
+                android:id="@+id/elitei20_right"
+                android:layout_width="300dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/i20_right" />
+        </ViewFlipper>
+
+        <ImageView
+            android:id="@+id/elitenext"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/next" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bookcartextview"
+        android:layout_width="334dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="104dp"
+        android:paddingLeft="30dp"
+        android:text="Book A Car / Book Test Drive"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</LinearLayout>

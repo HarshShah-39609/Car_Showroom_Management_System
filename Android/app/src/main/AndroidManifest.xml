@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.projectcsms">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="com.google.android.wearable"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectCSMS"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".creta_exterier"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".creta_interer"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity android:name=".xuv_500view"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity android:name=".xuv500_main"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity android:name=".scorpio_view"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity android:name=".scorpio_main"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".harrier_view"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".harrier_main"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".tiago_view"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".tiago_main"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".alto_view"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".alto_main"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".swift_view"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".swift_main"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".kwidview"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".kwidmain"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".dusterview"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".dustermain"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".i20view"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".i20main"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".cardetails2"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".cretaview"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Cretamain"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Cardetails"
+            android:screenOrientation="portrait"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar" />
+        <activity
+            android:name=".Feedback"
+            android:screenOrientation="portrait"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"/>
+        <activity
+            android:name=".Book_CancelBooking"
+            android:screenOrientation="portrait"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"/>
+        <activity
+            android:name=".Main_Page"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BookAService"
+            android:screenOrientation="portrait"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            />
+        <activity
+            android:name=".BookACar"
+            android:screenOrientation="portrait"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar" />
+        <activity android:name=".setnewpassword"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait" />/>
+        <activity
+            android:name=".forgotpassword"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:theme = "@style/Theme.ProjectCSMS.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

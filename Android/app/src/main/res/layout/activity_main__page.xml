@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rolls"
+    tools:context=".Main_Page">
+
+
+    <ImageButton
+        android:id="@+id/img_carde"
+        android:layout_width="100dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="104dp"
+        android:background="@android:color/holo_orange_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_description" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Car Details"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_carde"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_carde"
+        app:layout_constraintTop_toBottomOf="@+id/img_carde" />
+
+    <ImageButton
+        android:id="@+id/img_book"
+        android:layout_width="100dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="104dp"
+        android:background="@android:color/holo_orange_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toEndOf="@+id/img_carde"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_car" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Book A Car"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_book"
+        app:layout_constraintStart_toStartOf="@+id/img_book"
+        app:layout_constraintTop_toBottomOf="@+id/img_book" />
+
+    <ImageButton
+        android:id="@+id/img_service"
+        android:layout_width="100dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="64dp"
+        android:background="@android:color/holo_orange_light"
+        app:layout_constraintEnd_toEndOf="@+id/textView39"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView39"
+        app:layout_constraintTop_toBottomOf="@+id/textView39"
+        app:srcCompat="@drawable/ic_carservice" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Book A Service"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_service"
+        app:layout_constraintStart_toStartOf="@+id/img_service"
+        app:layout_constraintTop_toBottomOf="@+id/img_service" />
+
+    <ImageButton
+        android:id="@+id/img_cancel"
+        android:layout_width="100dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="64dp"
+        android:background="@android:color/holo_orange_light"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/img_service"
+        app:layout_constraintTop_toBottomOf="@+id/textView40"
+        app:srcCompat="@drawable/ic_cancel" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Cancel Booking"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_cancel"
+        app:layout_constraintStart_toStartOf="@+id/img_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/img_cancel" />
+
+    <ImageButton
+        android:id="@+id/img_feedback"
+        android:layout_width="100dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="64dp"
+        android:background="@android:color/holo_orange_light"
+        app:layout_constraintEnd_toEndOf="@+id/textView42"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/textView41"
+        app:layout_constraintTop_toBottomOf="@+id/textView41"
+        app:srcCompat="@drawable/ic_feedback" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="FeedBack"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_feedback"
+        app:layout_constraintStart_toStartOf="@+id/img_feedback"
+        app:layout_constraintTop_toBottomOf="@+id/img_feedback" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

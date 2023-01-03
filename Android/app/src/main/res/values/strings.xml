@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ProjectCSMS</string>
+    <string name="title_activity_register">Register</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+    <string-array name="CarModel">
+        <item>Creta</item>
+        <item>i20</item>
+        <item>Duster</item>
+        <item>Kwid</item>
+        <item>Swift</item>
+        <item>Alto</item>
+        <item>Tiago</item>
+        <item>Harrier</item>
+        <item>Scorpio</item>
+        <item>Xuv500</item>
+    </string-array>
+    <string name="title_activity_main2">MainActivity2</string>
+</resources>
